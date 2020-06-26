@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@android:style/Widget.TextView.PopupMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#685858"
+        android:text="@string/title"
+        android:textColor="#130208"
+        android:textColorHighlight="#E91E63"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="357dp"
+        android:layout_height="503dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="100sp"
+        android:contentDescription="@string/photokeliye"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/a0" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <Button
+            android:id="@+id/button3"
+            style="@android:style/Widget.DeviceDefault.Button.Toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="previousPhoto"
+            android:text="@string/forPrevious" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@android:style/Widget.DeviceDefault.Button.Toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="nextPhoto"
+            android:text="@string/forNext" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

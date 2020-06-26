@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Album</string>
+    <string name="title">Album</string>
+    <string name="photokeliye"></string>
+    <string name="forPrevious">Previous</string>
+    <string name="forNext">Next</string>
+
+
+</resources>
